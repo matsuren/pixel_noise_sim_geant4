@@ -1,0 +1,8 @@
+build/
+cmake-build-*/
+.idea/
+.ipynb_checkpoints/
+__pycache__/
+
+convert_params_*.json
+geant4_gamma_noise_*.npy

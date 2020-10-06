@@ -1,0 +1,23 @@
+#------------------------------------------------------------------------------------
+/gps/source/intensity 1
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/pos/shape Square
+/gps/pos/halfx 0.5 mm
+/gps/pos/halfy 0.5 mm
+/gps/pos/centre 0.0  0.0  5.0 mm
+/gps/ang/type beam1d
+/gps/ene/type Mono
+/gps/ene/mono 1.17 MeV
+
+#------------------------------------------------------------------------------------
+/gps/source/add 1 # add intensity x another source
+/gps/particle gamma
+/gps/pos/type Beam
+/gps/pos/shape Square
+/gps/pos/halfx 0.5 mm
+/gps/pos/halfy 0.5 mm
+/gps/pos/centre 0.0  0.0  5.0 mm
+/gps/ang/type beam1d
+/gps/ene/type Mono
+/gps/ene/mono 1.33 MeV
