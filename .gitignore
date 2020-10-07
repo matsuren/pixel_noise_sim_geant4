@@ -6,3 +6,5 @@ __pycache__/
 
 convert_params_*.json
 geant4_gamma_noise_*.npy
+*noise_paper/
+*_eDep.csv
