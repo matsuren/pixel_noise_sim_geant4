@@ -97,8 +97,10 @@ G4LogicalVolume *Geometry::ConstructPixelDetector()
   //    G4int resolution_h = 1944;
   //  const G4int resolution_w = 128;
   //  const G4int resolution_h = 128;
-  const G4int resolution_w = 256;
-  const G4int resolution_h = 256;
+//  const G4int resolution_w = 256;
+//  const G4int resolution_h = 256;
+    const G4int resolution_w = 960;
+    const G4int resolution_h = 540;
   //  auto unit = 5*mm; // mm
   auto unit = um;
   const G4double pixel_x = 1.75 * unit;

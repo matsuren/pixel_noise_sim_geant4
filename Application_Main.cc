@@ -57,11 +57,12 @@ int main(int argc, char **argv)
   } else { // Batch mode
     auto start = std::chrono::steady_clock::now();
     G4String beam_cnt_str = argv[1];
-    std::string fname = "detect_result_256_" + beam_cnt_str + "_co";
-    uiManager->ApplyCommand("/control/execute primary_generator_gps_co.mac");
-    //    std::string fname = "detect_result_256_" + beam_cnt_str + "_cs";
+    //    std::string fname = "detect_result_256_" + beam_cnt_str + "_co";
     //    uiManager->ApplyCommand("/control/execute
-    //    primary_generator_gps_cs.mac");
+    //    primary_generator_gps_co.mac");
+    std::string fname = "detect_xu_result_960x540_" + beam_cnt_str + "_cs";
+    uiManager->ApplyCommand("/control/execute primary_generator_gps_cs.mac");
+
     uiManager->ApplyCommand("/analysis/setFileName " + fname);
     uiManager->ApplyCommand("/control/execute init_setup.mac");
     uiManager->ApplyCommand("/analysis/setActivation 0");

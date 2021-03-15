@@ -3,8 +3,8 @@
 /gps/particle gamma
 /gps/pos/type Beam
 /gps/pos/shape Square
-/gps/pos/halfx 0.5 mm
-/gps/pos/halfy 0.5 mm
+/gps/pos/halfx 2.0 mm
+/gps/pos/halfy 2.0 mm
 /gps/pos/centre 0.0  0.0  5.0 mm
 /gps/ang/type beam1d
 /gps/ene/type Mono
