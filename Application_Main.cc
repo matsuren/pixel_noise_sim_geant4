@@ -16,8 +16,13 @@
 int main(int argc, char **argv)
 //-------------------------------------------------------------------------------
 {
+  int seed = rand();
+  std::cout <<"Random seed:" << seed << std::endl;
+
   // Set random engine
   G4Random::setTheEngine(new CLHEP::RanecuEngine);
+  CLHEP::HepRandom::setTheSeed(seed);
+  G4Random::setTheSeed(seed);
 
   // Construct the default run manager
   G4RunManager *runManager = new G4RunManager;
